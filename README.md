@@ -1,5 +1,5 @@
 # comandos_GIT
-Repaso de apuntes de GIT año 2018 .
+Repaso de apuntes de GIT año 2018 . (Fuente https://trello.com/b/tbkg45FJ/git-github )
 ******************************************************************************************************
 GITHUB: es el facebook de los coders, es opensource si veo un ícono de un ojo y el texto NOT WATCHING // indica no seguir el repositorio,
 watching// notifica cambios en el proyecto
