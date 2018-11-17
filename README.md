@@ -1,6 +1,32 @@
 # comandos_GIT
 Repaso de apuntes de GIT año 2018 .
 ******************************************************************************************************
+GITHUB: es el facebook de los coders, es opensource si veo un ícono de un ojo y el texto NOT WATCHING // indica no seguir el repositorio,
+watching// notifica cambios en el proyecto
+ignoring // ignora los cambios del repositorio.
+la estrella es para añadir a favoritos.
+
+git clone jquery // baja el framework jquery y también podemos pasar un repositorio de local a remoto PUEDO CLONAR COPIANDO EL HTTP o el HSS directamente de github.
+
+Conviene colocar el mismo nombre a la carpeta y al repositorio ademàs de comenzar creando el repositorio primero. Si la carpeta no tiene archivos no se ve nada en github.
+
+git remote add origin (http.....de github) // conecta nuestro proyecto local con el remoto desde cònsola.
+
+git remote -v // muestra el origin y el fetch, osea muestra cómo se encuentra el remote en su conección.
+
+git remote remove origin // quita la conexión del remote.
+
+git push origin master // pasa la rama master a github, luego nos pide el user y la clave para subir los cambios, recargo github y lo veré cargado listo para contribuciones. ojo con la rama en que esté trabajando, si tengo varias abro en github la que corresponde y observo sus commits.
+
+ISSUES : parte de github que permite mejorar o solucionar errores o cosas pendientes del repositorio, lo creo en github, describo lo que harè (es colaborativo) es como comentar opiniones tipo chat.
+con staying with markdown is supported tendremos la posibilidad de añadir interactividad al código tipo preview, para marcar y colorear los issues.
+
+MILESTONES: Son grupos de issues que aplican para un proyecto con perìodo de caducidad tipo TRELLO, engloba a todos los issues y los ORGANIZA, aparece en la pestaña de issues y se crean con su nombre.
+
+LABELS: aparece como pestaña en la ventana de issues, organizan con etiquetas de colores los distintos problemas que podamos encontrar en los issues , se pueden editar como en TRELLO.
+Tambièn podemos asignar usuarios a los issues.
+
+
 Crear una carpeta para tu proyecto y colocar archivos
 Entonces, estando en una carpeta de tu ordenador donde hemos dicho que vamos a crear todos nuestros repositorios, puedes crear una carpeta específica para tu primer proyecto con Git. La carpeta de tu proyecto la puedes crear con el explorador de archivos o si quieres por línea de comandos, es indiferente.
 
