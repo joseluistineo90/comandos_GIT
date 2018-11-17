@@ -1,5 +1,66 @@
 # comandos_GIT
-Repaso de apuntes de GIT año 2015
+Repaso de apuntes de GIT año 2018 .
+******************************************************************************************************
+Crear una carpeta para tu proyecto y colocar archivos
+Entonces, estando en una carpeta de tu ordenador donde hemos dicho que vamos a crear todos nuestros repositorios, puedes crear una carpeta específica para tu primer proyecto con Git. La carpeta de tu proyecto la puedes crear con el explorador de archivos o si quieres por línea de comandos, es indiferente.
+
+Una vez creada tu carpeta puedes crear archivos dentro. Como estamos hablando de desarrollo de software, los archivos que meterás dentro de tu carpeta contendrán el código de tu aplicación, página web, etc.
+
+Nota: Para crear los archivos, en el flujo de trabajo común de un desarrollador usarás tu editor de código preferido: Eclipse, Sublime Text, Komodo, Notepad++, Gedit, PhpStorm, etc. Como prefieras. También, por supuesto, puedes crear tu archivo por línea de comandos y editarlo si estás en Linux con el conocido Vim o cualquier otro editor de interfaz solo texto.
+Inicializar el repositorio Git
+Para crear tu repositorio Git, donde monitorizamos los archivos de un proyecto, tienes que realizar una operación previa. Es la inicialización del repositorio Git que queremos crear en la carpeta de tu proyecto y es una operación que deberás realizar una única vez para este proyecto.
+
+Nota: Cada proyecto lo tendrás en una carpeta distinta y será un repositorio independiente. Esta operación de inicialización de tu repositorio, por tanto, la tendrás que realizar una única vez para cada proyecto que quieras controlar sus versiones por medio de Git.
+Así pues, antes que nada (antes de enviar cualquier archivo al repositorio), creo el repositorio Git con el comando "git init".
+
+git init
+
+Una vez has inicializado el repositorio, podrás observar que se ha creado una carpeta en tu proyecto llamada ".git" . Si ves esa carpeta en tu proyecto es que el repositorio se ha inicializado correctamente y que ya tienes convertida esa carpeta en un repositorio de software Git.
+
+Nota: Los archivos o carpetas en Linux / Mac que comienzan por un punto están ocultos en el sistema de archivos. Para verlos tendrás que ejecutar el comando "ls -la".
+En la carpeta .git es donde se va a guardar toda la información relativa al repositorio. Resultará obvio, pero conviene decir que nunca se debe borrar esa carpeta y tampoco deberíamos acceder de forma directa a sus contenidos, ya que nos vamos a comunicar siempre con el repositorio por medio de comandos.
+
+Guardar los archivos en el repositorio (commit)
+Una vez que crees tus primeros archivos, puedes comenzar a trabajar con Git, enviando esos ficheros al repositorio. Aunque los archivos estén en la carpeta de tu proyecto y hayas iniciado el repositorio Git previamente, el sistema de control de versiones no los está monitorizando, por lo que a nivel de tu repositorio Git todavía es como si no estuvieran.
+
+A esa acción de guardar los archivos en el repositorio se llama, en la jerga de Git, hacer un "commit". En este caso el commit lo estás haciendo en local, porque los archivos los estás enviando a tu repositorio local que tienes en tu máquina.
+
+Un commit en Git se hace mediante dos pasos.
+
+1) Tengo que añadir el fichero a una zona intermedia temporal que se llama "Zona de Index" o "Staging Area" que es una zona que utiliza Git donde se van guardando los ficheros que posteriormente luego se van a hacer un commit.
+
+Cualquier archivo que quieras mandar a la zona de index lo haces con el comando "add".
+
+git add nombre-del-fichero
+
+Una vez añadido podrías ver que realmente tienes ese fichero en el "staging area", mediante el comando "status".
+
+git status
+
+Verás que, entre las cosas que te aparecen como salida de ese comando, te dice que tienes tu fichero añadido como "new file". Además te dice que estos cambios están preparados para hacer commit.
+
+2) Tengo que enviar los archivos de la zona de Index al repositorio, lo que se denomina el commit propiamente dicho. Lo haces con el siguiente comando:
+
+git commit -m "mensaje para el commit"
+
+Con esto ya tenemos nuestro primer archivo dentro del repositorio. A partir de aquí podremos mantener y controlar los cambios que se hagan sobre este archivo (u otros que hayamos incluido por medio del commit).
+
+Si haces de nuevo un comando "git status" podrás comprobar que no hay nada para enviar al repositorio. Eso quiere decir que la zona de Index está limpia y que todos los cambios están enviados a Git.
+
+Hasta este punto hemos podido aprender a crear nuestro repositorio y enviar los primeros cambios por medio de la operación de commit. Ahora puedes probarlo en tu sistema para comenzar a experimentar Git. En las siguientes entregas continuaremos explorando el flujo de trabajo con Git, y mejorando esta primera aproximación con nuevos comandos que te permitan hacer mas cosas y facilitarte el trabajo resumiendo las operaciones ya comentadas en menos pasos.
+
+Editar - Eliminar
+jose 6 de mar. de 2016 a las 19:57 (editado)
+Antes que nada, inmediatamente después de instalar Git, lo primero que deberías hacer es lanzar un par de comandos de configuración.
+
+git config global user.name "Tu nombre aquí"
+git config global user.email "tu_email_aquí@example.com"
+
+Con estos comandos indicas tu nombre de usuario (usas tu nombre y apellidos generalmente) y el email. Esta configuración sirve para que cuando hagas commits en el repositorio local, éstos se almacenen con la referencia a ti mismo, meramente informativa. Gracias a ello, más adelante cuando obtengas información de los cambios realizados en el los archivos del "repo" local, te va a aparecer como responsable de esos cambios a este usuario y correo que has indicado.
+Git es la tecnología para hacer el control de versiones y GitHub simplemente es un hosting de repositorios Git, con una interfaz web que nos ofrece algunas utilidades basadas en el propio control de versiones Git.
+
+En GitHub puedo tener repositorios diversos y si quiero trabajar con alguno de ellos, primero debo tenerlo en local. Ojo, no necesitamos tener todos los repositorios que has publicado en GitHub en local, solo aquellos con los que vayamos a trabajar. En el momento que los tenemos en local podremos hacer cambios, almacenarlos en nuestro repositorio local y cuando lo juzguemos oportuno, enviarlo (empujar, push) a tantos servidores o repositorios remotos como queramos
+***********************************************************************************************************
 ojo no usar acentos. no jugar con la conexión una vez hice un git remove y me costó entrar.
 pwd // me permite ver la ruta por default en donde me encuentro.
 
