@@ -1,6 +1,11 @@
 # comandos_GIT
 Repaso de apuntes de GIT año 2018 . (Fuente https://trello.com/b/tbkg45FJ/git-github )
-******************************************************************************************************
+ DAERRORES LA SUBIDA DE REPOSITORIOS DESDE GIT A GITHUB  USA ESTO ↓↓
+******************************************************************************************************************************
+Probé lo que sale acá: stackoverflow.com/questions/10298291/… git config --global push.default current Y git push --force Y ahí subió los archivos. El problema es que ahora hago push, no me da ningún error pero en realidad no sube nada. ¿Por qué se puso tan imbécil esta aplicación? estaba funcionando perfecto hasta hace poco. He perdido todo un día de trabajo por culpa de sus errores raros. – Felipe Pino el 25 ago. 16 a las 20:15
+@FelipePino primero revisa el git status, luego si está bien, intenta con esto git pull -f https:["tu repo"] . Luego verifica en que rama estás debes estár en master, git checkout, ya después puedes hacer push con esto git push -f https:["tu repo"]. – julian salas el 25 ago. 16 a las 20:24
+
+*********************************************************************************************************************************
 GITHUB: es el facebook de los coders, es opensource si veo un ícono de un ojo y el texto NOT WATCHING // indica no seguir el repositorio,
 watching// notifica cambios en el proyecto
 ignoring // ignora los cambios del repositorio.
